@@ -1,1 +1,2 @@
-pip install git+https://github.com/Mophicz/mps-tools.git
+
+```pip install git+https://github.com/Mophicz/mps-tools.git```
