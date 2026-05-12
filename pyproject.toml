@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mps-tools"
+version = "0.1.0"
+description = "Tools for loading and analyzing MPS device data"
+dependencies = [
+    "numpy>=1.20.0"
+]
