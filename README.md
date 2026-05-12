@@ -20,9 +20,6 @@ imag = ds.imaginary     # imaginary part
 mag = ds.magnitude      # magnitude
 phase = ds.phase        # phase
 
-x_hdc = ds.h_dc_values      # offset field strength vector
-y_hac = ds.h_ac_values      # alternating field strength vector
-
 ## Examples
 # get a single point
 single_point = data[h_dc, h_ac, harmonic_index, f_ac]
@@ -31,5 +28,7 @@ single_point = data[h_dc, h_ac, harmonic_index, f_ac]
 spectrum = data[h_dc, h_ac, :, f_ac]
 
 # get magnitude "fingerprint"
-z_data = mag[:, :, harmonic_index, f_ac]
+z_magnitude = mag[:, :, harmonic_index, f_ac]
+x_hdc = ds.h_dc_values      # DC field strength (x-axis of "fingerprint" plot)
+y_hac = ds.h_ac_values      # AC field strength (y-axis of "fingerprint" plot)
 ```
