@@ -1,5 +1,5 @@
 import numpy as np
-from mps_dataset import MPSDataset
+from mps_tools.mps_dataset import MPSDataset
 
 
 class EnsembleDataset(MPSDataset):
