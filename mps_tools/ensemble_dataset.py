@@ -1,4 +1,3 @@
-import numpy as np
 from mps_tools.mps_dataset import MPSDataset
 
 
@@ -9,8 +8,15 @@ class EnsembleDataset(MPSDataset):
     """
 
     def __init__(
-        self, data, std_dev, num_samples, metadata=None, filename=None
+        self,
+        data,
+        std_dev,
+        angle_std_dev,
+        num_samples,
+        metadata=None,
+        filename=None,
     ):
         super().__init__(data=data, metadata=metadata, filename=filename)
         self.std_dev = std_dev
+        self.angle_std_dev = angle_std_dev
         self.num_samples = num_samples
