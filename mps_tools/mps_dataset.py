@@ -183,10 +183,8 @@ class MPSDataset:
 
     @property
     def magnitude(self):
-        """Computes and caches the magnitude of the 4D complex dataset."""
         return np.abs(self.data)
 
     @property
     def phase(self):
-        """Computes and caches the phase (angle) of the 4D complex dataset."""
         return np.angle(self.data)
