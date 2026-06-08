@@ -2,6 +2,10 @@ Install:
 ```
 pip install git+https://github.com/Mophicz/mps-tools.git
 ```
+Get newest update from Branch:
+```
+pip install --force-reinstall --no-cache-dir git+https://github.com/Mophicz/mps-tools.git@new-subclass-EnsembleMPSDataset
+```
 
 Import: 
 ```python
