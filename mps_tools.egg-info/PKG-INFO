@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: mps-tools
+Version: 0.1.0
+Summary: Tools for loading and analyzing MPS device data
+Requires-Dist: numpy>=1.20.0

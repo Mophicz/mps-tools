@@ -11,6 +11,7 @@ class EnsembleDataset(MPSDataset):
         self,
         data,
         std_dev,
+        mag_std_dev,
         angle_std_dev,
         num_samples,
         metadata=None,
@@ -18,5 +19,6 @@ class EnsembleDataset(MPSDataset):
     ):
         super().__init__(data=data, metadata=metadata, filename=filename)
         self.std_dev = std_dev
+        self.mag_std_dev = mag_std_dev
         self.angle_std_dev = angle_std_dev
         self.num_samples = num_samples
